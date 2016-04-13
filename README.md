@@ -65,7 +65,8 @@ By default Loady will will prepend the autoloader on the autoload queue to appen
 	$loader->register(false);
 ```
 Loady comes with a built in caching of all the files you have set to be autoloaded and by default caching is on. 
-By default Loady will try find a cache directory with load.cache file it is here where Loady will cache the files to change the default cache file just use setCacheFile method. 
+By default Loady will try to find a cache directory with load.cache file it is here where Loady will cache the files. 
+To change the default cache file just use setCacheFile method. 
 Also please provide the necessary permission so that Loady can write and read the cache file.
 ```php
 	$loader->setCacheFile('cachedir/cachefile.cache');
