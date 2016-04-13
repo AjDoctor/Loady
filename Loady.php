@@ -297,7 +297,7 @@ Class Loady
     /**
      * @param $cache_file_path
      */
-    public function clearCacheFile( $cache_file_path )
+    public function clearCacheFile( $cache_file_path = NULL )
     {
 
         $cache_file         = ( !EMPTY( $cache_file_path ) ) ? $cache_file_path : static::$_cache_file;
@@ -327,8 +327,6 @@ Class Loady
         $this->_cache_file_arr     = ( !EMPTY( $this->extractCacheData() ) ) ? $this->extractCacheData() : array();
 
         $cache_data         = $this->_cache_file_arr;
-
-        // $except_class       = array( 'CI_AJD_validation', 'MY_AJD_validation', 'CI_AJD_validation_beta', 'MY_AJD_validation_beta' );
 
         $except_class       = $this->except_class;
         
