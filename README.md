@@ -10,12 +10,12 @@ require Loady.php
 ```
 Then create a new Loady object. You can either provide the document root at the initialization of Loady or at the initialize method.
 ```php
-	$loader 	= new Loady( 'document_root' );
+	$loader 	= new Loady\Loady( 'document_root' );
 ```
 Or
 
 ```php
-	$loader 	= new Loady;
+	$loader 	= new Loady\Loady;
 	$loader->initialize( 'document_root' );
 ```
 Examples on how to set the file(s) to be autoloaded.
