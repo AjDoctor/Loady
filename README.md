@@ -76,7 +76,7 @@ If you don't want caching just
 	$loader->register(true, false);
 ```
 ##Requirements
-* __PHP 5.3+__
+* __PHP 5.4+__
 
 ##Installation
 For now install it by clicking download zip then unzip and include it in your project's directory.
